@@ -25,7 +25,7 @@ jobs:
     - run: npm ci
     - run: npm run cibuild --if-present
     - run: npm test
-    - name: Push git subdirectory as branch
+    - name: Deploy to page branch
       uses: s0/git-publish-subdir-action@v2.3.0
       env:
         REPO: git@github.com:MrDj200/repo.git
