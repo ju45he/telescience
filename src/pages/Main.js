@@ -281,7 +281,7 @@ const Main = props => {
             (tile[0] - 1 + modifier[0]) * 32 * newScale,
             -(tile[1] - 303 + modifier[1]) * 32 * newScale,
         ];
-        const [centerX, centerY] = [window.screen.width / 2, window.screen.height / 2];
+        const [centerX, centerY] = [window.innerWidth / 2, window.innerHeight / 2];
         return transform(tf => ({ ...tf, pos: [-tileX + centerX, -tileY + centerY] }));
     }
 
