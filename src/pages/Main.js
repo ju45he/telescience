@@ -70,7 +70,6 @@ const Main = props => {
     const [focussed, focus] = useState(false);
     // menu / doMenu used for menu events (obviously)
     const [menu, doMenu] = useState({ mouse: [0, 0], target: null });
-    const [copyToClepboardText, setClepboardText] = useState('');
     const selectCoordsRef = useRef(null);
 
     // Check for an existing localStorage item, if it is different than the existing state localStorage item, set it as the state.
@@ -222,7 +221,6 @@ const Main = props => {
                     favorite
                 </Button>
             </Menu>
-            <input type="text" ref={selectCoordsRef} hidden value={copyToClepboardText} />
         </div>
     );
 
@@ -250,9 +248,8 @@ const Main = props => {
         const { clientX, clientY, shiftKey } = e;
         if(shiftKey) {
             const coords = tileMath(...imgCoords(clientX, clientY));
-            setClepboardText(`${coords[0]} ${coords[1]}`)
-            selectCoordsRef.current.select();
-            document.execCommand("copy");
+            navigator.clipboard.writeText(`${coords[0]} ${coords[1]}`)
+            return;
         };
 
         // Detect if we moved
