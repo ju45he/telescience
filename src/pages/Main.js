@@ -70,6 +70,7 @@ const Main = props => {
     const [focussed, focus] = useState(false);
     // menu / doMenu used for menu events (obviously)
     const [menu, doMenu] = useState({ mouse: [0, 0], target: null });
+    const [copyToClepboardText, setClepboardText] = useState('');
 
     // Check for an existing localStorage item, if it is different than the existing state localStorage item, set it as the state.
     useEffect(() => {
@@ -220,6 +221,7 @@ const Main = props => {
                     favorite
                 </Button>
             </Menu>
+            <input type="text" hidden value={copyToClepboardText} />
         </div>
     );
 
@@ -244,7 +246,12 @@ const Main = props => {
     }
 
     function mouseClick(e) {
-        const { clientX, clientY } = e;
+        const { clientX, clientY, shiftKey } = e;
+        if(shiftKey) {
+            const coords = tileMath(...imgCoords(clientX, clientY));
+            setClepboardText(`${coords[0]} ${coords[1]}`)
+        };
+
         // Detect if we moved
         if (tf.mouse[0] !== clientX || tf.mouse[1] !== clientY) return;
         return transform(tf => ({ ...tf, selectedTile: tileMath(...imgCoords(clientX, clientY)) }));
