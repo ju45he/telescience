@@ -70,7 +70,6 @@ const Main = props => {
     const [focussed, focus] = useState(false);
     // menu / doMenu used for menu events (obviously)
     const [menu, doMenu] = useState({ mouse: [0, 0], target: null });
-    const selectCoordsRef = useRef(null);
 
     // Check for an existing localStorage item, if it is different than the existing state localStorage item, set it as the state.
     useEffect(() => {
