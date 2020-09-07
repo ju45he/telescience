@@ -258,7 +258,7 @@ const Main = props => {
             navigator.clipboard.writeText(`${coords[0]} ${coords[1]}`)
         };
 
-        // Detect if we moved
+        // Detect if we moved.
         if (tf.mouse[0] !== clientX || tf.mouse[1] !== clientY) return;
         return transform(tf => ({ ...tf, selectedTile: tileMath(...imgCoords(clientX, clientY)) }));
     }
