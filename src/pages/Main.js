@@ -259,7 +259,7 @@ const Main = props => {
         };
 
         // Detect if we moved
-        if (!shiftKey && tf.mouse[0] !== clientX || tf.mouse[1] !== clientY) return;
+        if (tf.mouse[0] !== clientX || tf.mouse[1] !== clientY) return;
         return transform(tf => ({ ...tf, selectedTile: tileMath(...imgCoords(clientX, clientY)) }));
     }
 
