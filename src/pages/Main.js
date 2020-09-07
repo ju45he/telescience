@@ -201,7 +201,15 @@ const Main = props => {
             <Svg
                 color="white"
                 style={iStyles.selectorStyle}
-                onClick={() => transform(tf => ({ ...tf, selectedTile: [1, 1] }))}
+                onClick={(e) => {
+                    const { clientX, clientY, shiftKey } = e;
+                    if(shiftKey) {
+                        const coords = tileMath(...imgCoords(clientX, clientY));
+                        navigator.clipboard.writeText(`${coords[0]} ${coords[1]}`)
+                        return;
+                    };
+                    return transform(tf => ({ ...tf, selectedTile: [1, 1] }))}
+                }
                 onContextMenu={contextMenu}
             />
             <Menu
@@ -248,11 +256,10 @@ const Main = props => {
         if(shiftKey) {
             const coords = tileMath(...imgCoords(clientX, clientY));
             navigator.clipboard.writeText(`${coords[0]} ${coords[1]}`)
-            return;
         };
 
         // Detect if we moved
-        if (tf.mouse[0] !== clientX || tf.mouse[1] !== clientY) return;
+        if (!shiftKey && tf.mouse[0] !== clientX || tf.mouse[1] !== clientY) return;
         return transform(tf => ({ ...tf, selectedTile: tileMath(...imgCoords(clientX, clientY)) }));
     }
 
