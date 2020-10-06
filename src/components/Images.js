@@ -27,7 +27,7 @@ const Images = ({ selectedMap, image }) => {
             destiny: `https://goonhub.com/images/maps/destiny/z1`,
             atlas: `https://goonhub.com/images/maps/atlas/z1`,
             horizon: `https://goonhub.com/images/maps/horizon/z1`,
-            donut3: `https://github.com/j-awn/telescience/blob/master/public/donut3/`,
+            donut3: `https://github.com/j-awn/telescience/blob/master/public/donut3`,
             mushroom: `https://goonhub.com/images/maps/mushroom/z1`,
             manta: `https://goonhub.com/images/maps/manta/z1`,
             kondaru: `https://goonhub.com/images/maps/kondaru/z1`,
