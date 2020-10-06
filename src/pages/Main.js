@@ -49,7 +49,7 @@ const Main = props => {
             { name: "Captain's Locker", location: [85, 166] },
         ],
         cogmap2: [{ name: 'Telescience', location: [104, 120] }, { name: 'AI core', location: [190, 220] }],
-        faintSignal: [{ name: 'RobustTec Implants', location: [266, 132] }, { name: 'Phaser', location: [285, 162] }],
+        faintSignal: [{ name: 'NASSA suit', location: [262, 70] }, { name: 'Phaser', location: [285, 162] }],
         oshan: [{ name: 'AI Core', location: [196, 160] }, { name: 'Telescience', location: [181, 174] }],
         clarion: [{ name: 'AI Core', location: [133, 99] }, { name: 'Telescience', location: [153, 107] }],
         destiny: [{ name: 'AI Core', location: [154, 141] }, { name: 'Telescience', location: [174, 104] }],
