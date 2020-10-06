@@ -56,6 +56,7 @@ const Main = props => {
         atlas: [{ name: 'AI Core', location: [154, 141] }, { name: 'Telescience', location: [144, 180] }],
         samedi: [],
         horizon: [{ name: 'AI Core', location: [114, 119] }, { name: 'Telescience', location: [235, 154] }],
+        donut3: [],
         mushroom: [{ name: 'AI Core', location: [185, 40] }, { name: 'Telescience', location: [134, 103] }],
         manta: [{ name: 'AI Core', location: [145, 169] }, { name: 'Telescience', location: [169, 128] }],
         kondaru: [{ name: 'AI Core', location: [213, 160] }, { name: 'Telescience', location: [123, 92] }],
