@@ -69,7 +69,8 @@ function imgCoords(x, y, funcScale = scale, pos = tf.pos) {
 
 ## Author
 
--   **Jesse Webb** => _All JS, html, Custom CSS_ => [Kayle7777][github link]
+-   **Jesse Webb** => _All JS, html, Custom CSS_ => [Kayle7777][old github link]
+-   **j-awn** => _Donut 3 support_ => [j-awn][github link]
 
 ### Code Links
 
@@ -83,6 +84,7 @@ function imgCoords(x, y, funcScale = scale, pos = tf.pos) {
 [byond]: http://www.byond.com/
 [telescience info]: https://wiki.ss13.co/Telescience
 [ss13 wiki]: https://wiki.ss13.co/Main_Page
-[github link]: https://github.com/kayle7777
-[github repo]: https://github.com/Kayle7777/telescience
-[github pages]: https://kayle7777.github.io/telescience/
+[old github link]: https://github.com/Kayle7777
+[github link]: https://github.com/j-awn
+[github repo]: https://github.com/j-awn/telescience
+[github pages]: https://j-awn.github.io/telescience/
