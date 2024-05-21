@@ -19,20 +19,20 @@ const Images = ({ selectedMap, image }) => {
     );
     function mapInfo(selectedMap) {
         const info = {
-            cogmap1: `https://goonhub.com/images/maps/cogmap/z1`,
-            cogmap2: `https://goonhub.com/images/maps/cogmap2/z1`,
-            faintSignal: `https://goonhub.com/images/maps/cogmap2/z3`,
-            oshan: `https://goonhub.com/images/maps/oshan/z1`,
-            clarion: `https://goonhub.com/images/maps/clarion/z1`,
-            destiny: `https://goonhub.com/images/maps/destiny/z1`,
-            atlas: `https://goonhub.com/images/maps/atlas/z1`,
-            horizon: `https://goonhub.com/images/maps/horizon/z1`,
+            cogmap1: `https://goonhub.com/images/maps/cogmap`,
+            cogmap2: `https://goonhub.com/images/maps/cogmap2`,
+            faintSignal: `https://goonhub.com/images/maps/cogmap2`,
+            oshan: `https://goonhub.com/images/maps/oshan`,
+            clarion: `https://goonhub.com/images/maps/clarion`,
+            destiny: `https://goonhub.com/images/maps/destiny`,
+            atlas: `https://goonhub.com/images/maps/atlas`,
+            horizon: `https://goonhub.com/images/maps/horizon`,
             donut3: `https://raw.githubusercontent.com/j-awn/telescience/master/public/donut3`,
             mushroom: `https://raw.githubusercontent.com/j-awn/telescience/master/public/mushroom`,
-            manta: `https://goonhub.com/images/maps/manta/z1`,
-            kondaru: `https://goonhub.com/images/maps/kondaru/z1`,
-            donut2: `https://goonhub.com/images/maps/donut2/z1`,
-            fleet: `https://goonhub.com/images/maps/bellerophon%20fleet/z1`,
+            manta: `https://goonhub.com/images/maps/manta`,
+            kondaru: `https://goonhub.com/images/maps/kondaru`,
+            donut2: `https://goonhub.com/images/maps/donut2`,
+            fleet: `https://goonhub.com/images/maps/bellerophon%20fleet`,
         };
         if (!info[selectedMap]) return info['cogmap1'];
         return info[selectedMap];
