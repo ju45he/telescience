@@ -28,7 +28,7 @@ jobs:
     - name: Deploy to page branch
       uses: s0/git-publish-subdir-action@v2.3.0
       env:
-        REPO: git@github.com:j-awn/telescience.git
+        REPO: git@github.com:ju45he/telescience.git
         BRANCH: gh-pages
         FOLDER: build
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
